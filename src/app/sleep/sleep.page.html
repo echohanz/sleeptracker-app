@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>sleep</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <!-- <ion-card>  
+    <ion-datetime  displayFormat="MMM DD, YYYY HH:mm" >
+
+    </ion-datetime>
+  </ion-card> -->
+  <ion-card>
+    <ion-card-content>
+      Have you logged today's sleepiness?
+    </ion-card-content>
+    <ion-card-content>
+      Let's do it now!
+    </ion-card-content>
+  </ion-card>
+<!-- </ion-content>
+<ion-content> -->
+  <ion-card>
+    <ion-label>Sleep time</ion-label>
+    <ion-datetime display-format="MMM D h:mm A" picker-format="MMM D h:mm A" placeholder="Select Time" name="stime" [(ngModel)]="stime"></ion-datetime>
+  </ion-card>
+
+  <ion-card>
+    <ion-label>Wake up time</ion-label>
+    <ion-datetime display-format="MMM D h:mm A" picker-format="MMM D h:mm A" placeholder="Select Time" name="wtime" [(ngModel)]="wtime"></ion-datetime>
+  </ion-card>
+
+  <ion-button expand="block" color = "dark" shape = "round" (click) = "submit()">
+		<ion-icon name = "rose"></ion-icon>
+		Submit
+	</ion-button>
+</ion-content>

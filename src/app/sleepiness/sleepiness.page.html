@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>sleepiness</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-card>
+    <ion-label style = "font-size: 16px" >Describe your sleepiness</ion-label>
+	</ion-card>
+
+  <ion-list >
+	  <ion-radio-group [(ngModel)]="user.value">
+      
+		<ion-item>
+			<ion-label>1.Wide awake</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=1></ion-radio>
+		</ion-item>  
+
+		<ion-item>
+			<ion-label>2.Can concentrate</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=2></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>3.Awake but not fully alert</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value="3"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>4.Somewhat foggy</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=4></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>5.Foggy(slowed down)</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=5></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>6.Sleepy and woozy</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=6></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>7. Being dream-like</ion-label>
+      <ion-icon slot = "start" name = "leaf" style = "font-size: 12px;"></ion-icon>
+			<ion-radio value=7></ion-radio>
+		</ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+  	<ion-card class = "timep">
+		<ion-datetime display-format="MMM D h:mm A" picker-format="MMM D h:mm A" placeholder="Select Time" name="stime" [(ngModel)]="ctime"></ion-datetime>
+	</ion-card>
+	<ion-button expand="block" color = "dark" shape = "round" (click) = "submit()">
+		<ion-icon name = "flower"></ion-icon>
+		<ion-label>Submit</ion-label>
+	</ion-button>
+
+	
+</ion-content>
